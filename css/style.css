@@ -16,6 +16,10 @@ body {
     align-items: flex-start;
 }
 
+.flex{
+    display: flex;
+}
+
 .super-view {
     color: rgb(185, 185, 185);
     text-align: right;
@@ -31,19 +35,22 @@ main{
 
 .utente{
     margin: 10px 7px;
-    min-width: 200px;
+    min-width: 300px;
     max-width: 250px;
+    min-height: 150px;
     flex-grow: 1;
     flex-shrink: 1;
-    height: calc(92% / 5);
     border: 1px solid white;
     position: relative;
-    height: 200px;
 }
 
 .utente>img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-size: cover;
+    height: 100%;
+    object-fit: cover;
     background-repeat: no-repeat;
 }
 
